@@ -37,7 +37,7 @@ var _ = Describe("AMI Static Resolution", func() {
 			Version:      "1.12",
 			InstanceType: "t2.medium",
 			ImageFamily:  "AmazonLinux2",
-			ExpectedAMI:  "ami-0315dd35bf204311d",
+			ExpectedAMI:  "ami-0a9b7c77bf7da9837",
 			ExpectError:  false,
 		}),
 		Entry("with non-gpu instance and us-east-1", ResolveCase{
@@ -45,7 +45,7 @@ var _ = Describe("AMI Static Resolution", func() {
 			Version:      "1.12",
 			InstanceType: "t2.medium",
 			ImageFamily:  "AmazonLinux2",
-			ExpectedAMI:  "ami-0259ce67309f76e0b",
+			ExpectedAMI:  "ami-0ee9e136178176e29",
 			ExpectError:  false,
 		}),
 		Entry("with non-gpu instance and eu-west-1", ResolveCase{
@@ -53,7 +53,7 @@ var _ = Describe("AMI Static Resolution", func() {
 			Version:      "1.12",
 			InstanceType: "t2.medium",
 			ImageFamily:  "AmazonLinux2",
-			ExpectedAMI:  "ami-0a6be9528ebb8999d",
+			ExpectedAMI:  "ami-0b728b5eb3e4ac9ba",
 			ExpectError:  false,
 		}),
 		Entry("with non-gpu instance and non-eks enabled region", ResolveCase{
@@ -69,7 +69,7 @@ var _ = Describe("AMI Static Resolution", func() {
 			Version:      "1.12",
 			InstanceType: "p2.xlarge",
 			ImageFamily:  "AmazonLinux2",
-			ExpectedAMI:  "ami-04f40a6dd1cd12b3c",
+			ExpectedAMI:  "ami-02710837090d86ecc",
 			ExpectError:  false,
 		}),
 		Entry("with gpu (p3) instance and us-east-1", ResolveCase{
@@ -77,7 +77,7 @@ var _ = Describe("AMI Static Resolution", func() {
 			Version:      "1.12",
 			InstanceType: "p3.2xlarge",
 			ImageFamily:  "AmazonLinux2",
-			ExpectedAMI:  "ami-0585963de7ab8b964",
+			ExpectedAMI:  "ami-00e4da0ed7025bcad",
 			ExpectError:  false,
 		}),
 		Entry("with gpu (p2) instance and eu-west-1", ResolveCase{
@@ -85,7 +85,7 @@ var _ = Describe("AMI Static Resolution", func() {
 			Version:      "1.12",
 			InstanceType: "p2.xlarge",
 			ImageFamily:  "AmazonLinux2",
-			ExpectedAMI:  "ami-049574de1981b69dc",
+			ExpectedAMI:  "ami-0de0118f2fa486674",
 			ExpectError:  false,
 		}),
 		Entry("with gpu (g3) instance and eu-west-1", ResolveCase{
@@ -93,7 +93,7 @@ var _ = Describe("AMI Static Resolution", func() {
 			Version:      "1.12",
 			InstanceType: "g3.4xlarge",
 			ImageFamily:  "AmazonLinux2",
-			ExpectedAMI:  "ami-049574de1981b69dc",
+			ExpectedAMI:  "ami-0de0118f2fa486674",
 			ExpectError:  false,
 		}),
 		Entry("with gpu (g4) instance and eu-west-1", ResolveCase{
@@ -101,7 +101,7 @@ var _ = Describe("AMI Static Resolution", func() {
 			Version:      "1.12",
 			InstanceType: "g4dn.xlarge",
 			ImageFamily:  "AmazonLinux2",
-			ExpectedAMI:  "ami-049574de1981b69dc",
+			ExpectedAMI:  "ami-0de0118f2fa486674",
 			ExpectError:  false,
 		}),
 		Entry("with gpu (p3) instance and non-existent region", ResolveCase{
