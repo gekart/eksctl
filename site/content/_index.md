@@ -3,9 +3,9 @@ title: Introduction
 type: docs
 ---
 
-# **`eksctl` - The official CLI for Amazon EKS**
-
 <div id="github"><script async defer src="https://buttons.github.io/buttons.js"></script><a class="github-button" href="https://github.com/weaveworks/eksctl" data-icon="octicon-star" data-show-count="true" aria-label="Star weaveworks/eksctl on GitHub">Star</a><div id="github-section"><a class="github-button" href="https://github.com/weaveworks/eksctl/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork weaveworks/eksctl on GitHub">Fork</a></div></div>
+
+# **`eksctl` - The official CLI for Amazon EKS**
 
 ### sponsored by [![Weaveworks](introduction/images/weaveworks.svg#inline-ww)](https://www.weave.works/) and built by [![Contributors](introduction/images/gophers.png#inline)](https://github.com/weaveworks/eksctl/graphs/contributors) on [![Github](introduction/images/octocat.svg#inline)](https://github.com/weaveworks/eksctl)
 
@@ -80,16 +80,16 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: basic-cluster
-  region: eu-north-1
+    name: basic-cluster
+    region: eu-north-1
 
 nodeGroups:
-  - name: ng-1
-    instanceType: m5.large
-    desiredCapacity: 10
-  - name: ng-2
-    instanceType: m5.xlarge
-    desiredCapacity: 2
+    - name: ng-1
+      instanceType: m5.large
+      desiredCapacity: 10
+    - name: ng-2
+      instanceType: m5.xlarge
+      desiredCapacity: 2
 ```
 
 </div>
